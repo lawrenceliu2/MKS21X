@@ -7,3 +7,4 @@ git log: Shows a list of all previous commits.
 git checkout HEAD [filename]: Discards changes in the working directory.
 git reset HEAD [filename]: Unstages file changes int he staging area.
 git reset [SHA]: Resets to a previous commit in your commit history.
+git checkout [SHA]: A better way to reset.
