@@ -5,6 +5,8 @@ git diff: Shows the difference between the working directory and the staging are
 git commit -m "Comment": Stores file changes from the staging area in the repository with the comment.
 git log: Shows a list of all previous commits.
 git checkout HEAD [filename]: Discards changes in the working directory.
-git reset HEAD [filename]: Unstages file changes int he staging area.
-git reset [SHA]: Resets to a previous commit in your commit history.
-git checkout [SHA]: A better way to reset.
+git checkout [SHA]: A better way to reset. Can create a new branch with git checkout -b [branchname] [SHA].
+git merge [branchname]: Merges branchname with the current branch.
+git clone [url]: Clones the url, a git repo, into your current directory.
+git push: Pushes the current repo to GitHub.
+git pull: Pulls the current repo from GitHub.
