@@ -9,13 +9,17 @@ git checkout HEAD [filename]: Discards changes in the working directory.
 git reset HEAD [filename]: Unstages file changes in the staging area.
 git reset [SHA]: Resets to a previous commit in your commit history.
 <<<<<<< HEAD
+<<<<<<< HEAD
 git potato: Orders a fine-looking yet moderately priced potato from Amazon.
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 29e6a2457eb84c0cb1f3138a4065e8de6e436640
 git checkout [SHA]: A better way to reset.
 =======
 git potato: Orders a fine-looking yet moderately priced potato from Amazon.
 >>>>>>> master
+<<<<<<< HEAD
 >>>>>>> origin/resetting
 =======
 git checkout [SHA]: A better way to reset. Can create a new branch with git checkout -b [branchname] [SHA].
@@ -24,3 +28,5 @@ git clone [url]: Clones the url, a git repo, into your current directory.
 git push: Pushes the current repo to GitHub.
 git pull: Pulls the current repo from GitHub.
 >>>>>>> merging
+=======
+>>>>>>> 29e6a2457eb84c0cb1f3138a4065e8de6e436640
