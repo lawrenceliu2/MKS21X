@@ -57,6 +57,7 @@ public class BarCode implements Comparable{
 	    ans+=Bars.get((int)(_zip.charAt(i)));
 	}
 	ans+=Bars.get(_checkDigit)+"|";
+	return ans;
 }
 
 
@@ -68,13 +69,8 @@ public class BarCode implements Comparable{
     }
 
 
-    public int compareTo(Comparable other){
-	if (equals(other)){
-	    return 0;
-	}
-	String data=_zip+_checkDigit;
-	String ans=other._zip+other._checkDigit;
-	return data.compareTo(ans);
+    public int compareTo(Object other){
+	return toString().compareTo(other.toString());
     }
     // postcondition: compares the zip + checkdigit 
 
