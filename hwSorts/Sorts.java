@@ -25,7 +25,14 @@ public class Sorts{
     }
 
     public static void selection(int[]data){
-	for (int i=0;i<data.length;i++){
+	for (int i=0;i<data.length-1;i++){
+	    int min = data[i];
+	    int minIndex = i;
+	    for (int k=i+1;k<data.length;k++){
+		if (data[k]<min){
+		    min=data[k];
+		    minIndex=k;
+		}
 
     public static void main(String[]args){
 	int[]ary={8,7,1,4,9};
