@@ -45,7 +45,7 @@ public class Sorts{
 	boolean switched = false;
 	for(int i=data.length-1;i>0;i--){
 	    for (int k=i;k>0;k--){
-		if (data[k-1]<data[k]){
+		if (data[k-1]>data[k]){
 		    int switching=data[k];
 		    data[k]=data[k-1];
 		    data[k-1]=switching;
