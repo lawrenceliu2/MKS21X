@@ -13,7 +13,7 @@ public class Sorts{
 	System.out.print("}\n");
     }
 
-    public static void insertion(int[]data){
+    public static void insertionSort(int[]data){
 	for (int i=1;i<data.length;i++){
 	    int moving = data[i];
 	    int x;
@@ -24,20 +24,47 @@ public class Sorts{
 	}
     }
 
-    public static void selection(int[]data){
+    public static void selectionSort(int[]data){
 	for (int i=0;i<data.length-1;i++){
 	    int min = data[i];
 	    int minIndex = i;
+	    int min2 = data[i];
 	    for (int k=i+1;k<data.length;k++){
 		if (data[k]<min){
 		    min=data[k];
 		    minIndex=k;
 		}
+	    }
+	    data[i]=min;
+	    data[minIndex]=min2;
+	    printArray(data);
+	}
+    }
+
+    public static void bubbleSort(int[]data){
+	boolean switched = false;
+	for(int i=data.length-1;i>0;i--){
+	    for (int k=i;k>0;k--){
+		if (data[k-1]<data[k]){
+		    int switching=data[k];
+		    data[k]=data[k-1];
+		    data[k-1]=switching;
+		    switched=true;
+		}
+	    }
+	    if (switched==false){
+		i=0;
+	    }
+	    printArray(data);
+	}
+    }
 
     public static void main(String[]args){
 	int[]ary={8,7,1,4,9};
 	printArray(ary);
-	insertion(ary);
+	//insertionSort(ary);
+        //selectionSort(ary);
+	bubbleSort(ary);
 	printArray(ary);
     }
 }
