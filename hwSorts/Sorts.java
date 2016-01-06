@@ -44,11 +44,11 @@ public class Sorts{
     public static void bubbleSort(int[]data){
 	boolean switched = false;
 	for(int i=data.length-1;i>0;i--){
-	    for (int k=i;k>0;k--){
-		if (data[k-1]>data[k]){
+	    for (int k=0;k<i;k++){
+		if (data[k]>data[k+1]){
 		    int switching=data[k];
-		    data[k]=data[k-1];
-		    data[k-1]=switching;
+		    data[k]=data[k+1];
+		    data[k+1]=switching;
 		    switched=true;
 		}
 	    }
@@ -56,11 +56,12 @@ public class Sorts{
 		i=0;
 	    }
 	    printArray(data);
+	    switched=false;
 	}
     }
 
     public static void main(String[]args){
-	int[]ary={8,7,1,4,9};
+	int[]ary={8,7,1,4,9,0};
 	printArray(ary);
 	//insertionSort(ary);
         //selectionSort(ary);
